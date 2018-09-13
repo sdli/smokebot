@@ -4,7 +4,7 @@
   "description": "A front-end tool for building nodejs server and docker container.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,9 @@
   "homepage": "https://github.com/sdli/smokebot#readme",
   "dependencies": {
     "yargs": "^12.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "colors": "^1.3.2"
   }
 }

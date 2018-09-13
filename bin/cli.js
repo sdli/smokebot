@@ -45,7 +45,22 @@
                     return;
                 }
 
-                console.log(argv);
+                switch (argv._[0]){
+                    case "start":
+                        console.log("启动服务。");
+                        break;
+
+                    // initiate the bot options from stdin
+                    // you can seach more in file `./smokebot_init.js`
+                    case "init":
+                        const init = require("./smokebot_init");
+                        const initInstance = new init();
+                        initInstance.readLine();
+                        break;
+                    case "default":
+                        console.error(output);
+                }
+
             });
         }else{
             console.error(usage);
