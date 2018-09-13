@@ -1,0 +1,32 @@
+{
+  "name": "smokebot",
+  "version": "1.0.0",
+  "description": "A front-end tool for building nodejs server and docker container.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdli/smokebot.git"
+  },
+  "keywords": [
+    "nodejs",
+    "server",
+    "docker",
+    "front-end"
+  ],
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "bin": "./bin/cli.js",
+  "author": "Steven Leo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdli/smokebot/issues"
+  },
+  "homepage": "https://github.com/sdli/smokebot#readme",
+  "dependencies": {
+    "yargs": "^12.0.2"
+  }
+}
